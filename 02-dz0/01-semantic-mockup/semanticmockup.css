@@ -1,0 +1,40 @@
+*{
+    color: white;  
+    }
+
+header {
+    background-color: red;
+    font-size: 42px;
+    text-decoration-style: solid;
+}
+nav {
+    background-color: orange;
+    font-size: 38px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    }
+
+main {
+    background-color: green;
+}
+footer {
+    background-color: purple;
+    font-size: 40px;
+}
+article {
+    background-color: blue;
+    text-align: left;
+    padding-top: 5px;
+    }
+
+h2 {
+    text-indent: 25px;
+}
+header, nav, main, footer {
+    text-align: center;
+    margin: 0px;
+    border: 0px;
+    padding: 10px 8px;
+    width: 50%;
+    }
+

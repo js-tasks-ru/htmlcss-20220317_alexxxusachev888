@@ -1,1 +1,72 @@
-/* Стилизация кнопки */
+:root {
+    --primary-background-color: #4263EB;
+    --secondary-background-color: #7048E8;
+    --alternate-background-color: #E5E5E5;
+    --alternate-color: #495057;
+    /* Возможно здесь целесообразно прописать переменные для состояний :hover and :disabled. Я не уверен...*/
+    --transition_all: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 56px;
+}
+
+.button__primary {
+    background-color: var(--primary-background-color);
+    border: 1px solid #ACB5BD;
+}
+
+.button__primary:hover {
+    background-color: #2342C0;
+    border: 1px solid #212429;
+    transition: var: (--transition_all);
+}
+
+.button__primary:disabled {
+    background-color: #4263EB;
+    opacity: 0.5;
+    transition: var: (--transition_all);
+}
+
+.button__secondary {
+    background-color: var(--secondary-background-color);
+}
+
+.button__secondary:hover {
+    background-color: #5028C6;
+    transition: var: (--transition_all);
+}
+
+.button__secondary:disabled {
+    background-color: #7048E8;
+    opacity: 0.5;
+    transition: var: (--transition_all);
+}
+
+.button__alternate {
+    background-color: var(--alternate-background-color);
+    color: var(--alternate-color);
+}
+
+.button__alternate:hover {
+    background-color: var(--alternate-background-color);
+    color: var(--alternate-color);
+    border: 1px solid #212429;
+    transition: var: (--transition_all);
+}
+
+.button__alternate:disabled {
+    background-color: var(--alternate-background-color);
+    color: var(--alternate-color);
+    border: 1px solid #212429;
+    transition: var: (--transition_all);
+}

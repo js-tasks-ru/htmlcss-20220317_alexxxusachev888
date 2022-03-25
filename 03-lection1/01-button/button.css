@@ -1,12 +1,3 @@
-:root {
-    --primary-background-color: #4263EB;
-    --secondary-background-color: #7048E8;
-    --alternate-background-color: #E5E5E5;
-    --alternate-color: #495057;
-    /* Возможно здесь целесообразно прописать переменные для состояний :hover and :disabled. Я не уверен...*/
-    --transition_all: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
-}
-
 .button {
     display: inline-block;
     border-radius: 8px;
@@ -17,56 +8,53 @@
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
-    padding: 15px 56px;
+    padding: 15px 56px 14px;
+    transition: var: (--transition_all);
+    box-sizing: border-box;
+    height: 48px;
 }
 
-.button__primary {
+.button_primary {
     background-color: var(--primary-background-color);
     border: 1px solid #ACB5BD;
 }
 
-.button__primary:hover {
+.button_primary:hover {
     background-color: #2342C0;
     border: 1px solid #212429;
-    transition: var: (--transition_all);
 }
 
-.button__primary:disabled {
-    background-color: #4263EB;
+.button_primary:disabled {
+    pointer-events: none;
     opacity: 0.5;
-    transition: var: (--transition_all);
-}
+    }
 
-.button__secondary {
+.button_secondary {
     background-color: var(--secondary-background-color);
 }
 
-.button__secondary:hover {
+.button_secondary:hover {
     background-color: #5028C6;
-    transition: var: (--transition_all);
 }
 
-.button__secondary:disabled {
+.button_secondary:disabled {
     background-color: #7048E8;
     opacity: 0.5;
-    transition: var: (--transition_all);
 }
 
-.button__alternate {
+.button_alternate {
     background-color: var(--alternate-background-color);
     color: var(--alternate-color);
 }
 
-.button__alternate:hover {
-    background-color: var(--alternate-background-color);
-    color: var(--alternate-color);
-    border: 1px solid #212429;
-    transition: var: (--transition_all);
-}
-
-.button__alternate:disabled {
+.button_alternate:hover {
     background-color: var(--alternate-background-color);
     color: var(--alternate-color);
     border: 1px solid #212429;
-    transition: var: (--transition_all);
+}
+
+.button_alternate:disabled {
+    background-color: var(--alternate-background-color);
+    color: var(--alternate-color);
+    border: 1px solid #212429;
 }

@@ -18,6 +18,13 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --primary-background-color: #4263EB;
+    --secondary-background-color: #7048E8;
+    --alternate-background-color: #E5E5E5;
+    --alternate-color: #495057;
+    --transition_all: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
+
 }
 
 * {

@@ -1,4 +1,11 @@
 @import '../fonts/fonts.css';
+@import "../../components/container/container.css";
+@import "../../components/footer/footer.css";
+@import "../../components/header/header.css";
+@import "../../components/page/page.css";
+@import "../../components/preview/preview.css";
+
+/*@import "normalaize.css"*/
 
 :root {
     --white: #ffffff;
@@ -17,8 +24,13 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+    
 }
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100px;
 }

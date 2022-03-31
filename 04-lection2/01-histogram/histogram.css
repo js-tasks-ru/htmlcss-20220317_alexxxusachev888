@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.container {
+    width: 1620px;
+}
+
+.histogram {
+    background: #FFFFFF;
+    border: 1px solid #ACB5BD;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 354px;
+    
+}
+
+.histogram__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px 24px 0px 24px;
+}
+
+.histogram__numbers {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #212429;
+    margin: 6px 268px 0px 24px;
+    
+}
+
+.histogram__text1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212429;
+    opacity: 0.8;
+} 
+
+.histogram__rectangles {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1px;
+    margin: 39px 24px 24px 24px;
+}
+
+.histogram__rectangles_point {
+    background: #4263EB;
+    width: 9px;
+    height: 50px;
+}

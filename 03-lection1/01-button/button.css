@@ -14,6 +14,11 @@
     height: 48px;
 }
 
+.button:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
 .button_primary {
     background-color: var(--primary-background-color);
     border: 1px solid #ACB5BD;
@@ -24,11 +29,6 @@
     border: 1px solid #212429;
 }
 
-.button_primary:disabled {
-    pointer-events: none;
-    opacity: 0.5;
-    }
-
 .button_secondary {
     background-color: var(--secondary-background-color);
 }
@@ -37,23 +37,12 @@
     background-color: #5028C6;
 }
 
-.button_secondary:disabled {
-    background-color: #7048E8;
-    opacity: 0.5;
-}
-
 .button_alternate {
     background-color: var(--alternate-background-color);
     color: var(--alternate-color);
 }
 
 .button_alternate:hover {
-    background-color: var(--alternate-background-color);
-    color: var(--alternate-color);
-    border: 1px solid #212429;
-}
-
-.button_alternate:disabled {
     background-color: var(--alternate-background-color);
     color: var(--alternate-color);
     border: 1px solid #212429;

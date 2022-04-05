@@ -38,12 +38,12 @@
     flex-direction: row;
     align-items: flex-end;
     gap: 1px; 
+    height: 50px;
 }
 
-.histogram__rectangles_point {
-    background: #4263EB;
+.histogram__rectangles-point {
+    background-color: #4263EB;
     display: flex;
     flex-basis: 9px; 
     flex-grow: 1; 
-    height: 50px;
 }

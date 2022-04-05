@@ -5,16 +5,19 @@
 .accordion__title::-webkit-details-marker {
   display: none;
 }
-
-
 .accordion {
+    display: inline-block;
+}
+
+.accordion__item {
+    margin-bottom: 8px;
     background: #FFFFFF;
     border: 1px solid #ACB5BD;
     box-sizing: border-box;
     border-radius: 8px;
     padding: 24px 49px 32px 24px;
-       
 }
+
 
 .accordion__title {
     color: #212429;
@@ -35,11 +38,6 @@
     line-height: 24px;
     }
 
-.accordion__item {
-    margin-bottom: 8px;
-    display: inline-block;
-    
-}
 
 .accordion__item:last-child {
     margin-bottom: 0;

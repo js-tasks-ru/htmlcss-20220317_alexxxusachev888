@@ -1,13 +1,6 @@
-body {
-    
+.tooltip {
     display: inline-block;
     position: relative;
-}
-
-.tooltip {
-    position: relative;
-    left: 1000%;
-    top: 100%;
     
 }
 .tooltip__icon {
@@ -28,11 +21,12 @@ body {
     line-height: 24px;
     text-align: center;
     color: #DDE2E5;
-    padding: 13px 21px;
     position: absolute;
+    padding: 13px 21px;
     white-space: nowrap;
-    top: -250%;
-    right: -220%;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .tooltip__helper::after {

@@ -2,14 +2,15 @@ body {
     min-height: 100vh;
     display: flex;
     justify-items: center;
-    align-items: center;
+    align-items: center;*/
+    position: relative;
 }
 
 .button {
     display: flex;
-    justify-items: center;
-    align-items: center;
-}
+    justify-content: flex-end;
+    align-content: flex-end;
+    }
 
 .button__button {
     font-family: 'Roboto';
@@ -25,9 +26,13 @@ body {
 }
 
 .popup {
-    display: inline-block;
+    display: none;
     background: #C4C4C4;
-   
+    position: absolute; 
+    bottom: 50%;
+    transform: translateX( 50%);
+    margin: 0px auto;
+        
 }
 
 .popup__body {
